@@ -16,8 +16,6 @@ import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.KeyManager;
 import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
-import java.util.HashMap;
-import java.util.List;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
@@ -25,6 +23,8 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.security.KeyStore;
 import java.security.SecureRandom;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Set;
 
 
@@ -110,6 +110,7 @@ public class BetfairClient {
         identityEndpoints.put(Exchange.AUS, "https://identitysso-cert.betfair.com/api/certlogin");
         identityEndpoints.put(Exchange.IT, "https://identitysso-cert.betfair.it/api/certlogin");
         identityEndpoints.put(Exchange.ES, "https://identitysso-cert.betfair.es/api/certlogin");
+        identityEndpoints.put(Exchange.SE, "https://identitysso-cert.betfair.se/api/certlogin");
     }
 
     public BetfairClient(Exchange exchange, String appKey) {

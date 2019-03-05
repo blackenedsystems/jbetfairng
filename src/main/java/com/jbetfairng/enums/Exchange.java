@@ -5,5 +5,6 @@ public enum Exchange {
     ES,
     IT,
     UK,
-    RO
+    RO,
+    SE
 }
